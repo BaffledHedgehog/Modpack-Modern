@@ -1,0 +1,40 @@
+Detected that Windows reported recent critical or error events in the Application log,
+which can indicate that a process (including the Minecraft JVM) terminated unexpectedly.
+Scope: Application log; Levels: Error & Critical; Window: last ~15 seconds.
+
+If no java.exe (or related JVM processes) are listed below, you can disregard this message.
+To inspect these events manually:
+  1) Press Win+R, type "eventvwr.msc", press Enter.
+  2) Open "Windows Logs" → "Application".
+  3) Sort by Date and look for entries with Level = Error or Critical near the crash time.
+
+-----------------------
+Time: 2026-03-29 05:35:21.367 MSK
+Source: Application Hang
+Event ID: 1002
+Level: Error
+
+Message:
+  Программа javaw.exe версии 17.0.15.0 прекратила взаимодействие с Windows и была закрыта. Чтобы узнать, имеются ли дополнительные сведения о проблеме, просмотрите журнал проблем в разделе "Безопасность и обслуживание" в панели управления.
+   Идентификатор процесса: 4afc
+   Время запуска: 01dcbf08c066d4ad
+   Время завершения: 9
+   Путь к приложению: C:\Users\yarik_temp\AppData\Roaming\.minecraft\runtime\java-runtime-gamma\windows\java-runtime-gamma\bin\javaw.exe
+   Идентификатор отчета: 1546dd29-da01-4198-9a69-90e8bd57b824
+   Полное имя пакета сбоя: 
+   Код приложения, связанного со сбойным пакетом: 
+   Тип зависания: Unknown
+
+
+Details:
+  - Data[1]: javaw.exe
+  - Data[2]: 17.0.15.0
+  - Data[3]: 4afc
+  - Data[4]: 01dcbf08c066d4ad
+  - Data[5]: 9
+  - Data[6]: C:\Users\yarik_temp\AppData\Roaming\.minecraft\runtime\java-runtime-gamma\windows\java-runtime-gamma\bin\javaw.exe
+  - Data[7]: 1546dd29-da01-4198-9a69-90e8bd57b824
+  - Data[10]: Unknown
+  - Binary: 55006E006B006E006F0077006E0000000000
+-----------------------
+

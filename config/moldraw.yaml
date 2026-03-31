@@ -16,6 +16,10 @@ molecule:
 
   moleculeScale: 20
 
+  spinMolecules: true
+
+  spinSpeedMultiplier: 1.0
+
 alloy:
   showAlloys: true
 
