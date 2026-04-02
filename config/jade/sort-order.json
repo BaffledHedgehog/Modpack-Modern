@@ -163,6 +163,7 @@
   "tfc:axolotl": null,
   "tfc:barrel": null,
   "tfc:bellows": null,
+  "tfc:bison": null,
   "tfc:blast_furnace": null,
   "tfc:bloom": null,
   "tfc:bloomery": null,
@@ -190,9 +191,13 @@
   "tfc:hot_poured_glass": null,
   "tfc:ingot_pile": null,
   "tfc:jack_o_lantern": null,
+  "tfc:jerboa": null,
   "tfc:lamp": null,
+  "tfc:lemming": null,
+  "tfc:leopard_seal": null,
   "tfc:loom": null,
   "tfc:mold_table": null,
+  "tfc:mongoose": null,
   "tfc:mud_bricks": null,
   "tfc:nest_box": null,
   "tfc:ocelot": null,
@@ -219,5 +224,6 @@
   "tfc_gourmet:milkable_animal": null,
   "tfc_support_indicator:support_indicator": null,
   "tfcgroomer:grooming_station": null,
+  "tfg:tier_locked_block_info": null,
   "treetap:tap": null
 }

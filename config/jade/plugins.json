@@ -163,6 +163,7 @@
     "frog": true,
     "rabbit": true,
     "sapling": true,
+    "jerboa": true,
     "composter": true,
     "surfer": true,
     "decaying": true,
@@ -179,7 +180,9 @@
     "encased_axle": true,
     "crop": true,
     "blast_furnace": true,
+    "lemming": true,
     "hand_wheel": true,
+    "mongoose": true,
     "sheet_pile": true,
     "quern": true,
     "pit_kiln_above": true,
@@ -189,6 +192,7 @@
     "chested_horse": true,
     "pack_predator": true,
     "barrel": true,
+    "leopard_seal": true,
     "mold_table": true,
     "predator": true,
     "wild_animal": true,
@@ -204,6 +208,7 @@
     "candle": true,
     "jack_o_lantern": true,
     "firepit": true,
+    "bison": true,
     "soarer": true,
     "wet_concrete": true,
     "ingot_pile": true
@@ -222,6 +227,9 @@
   "exposure": {
     "lightroom": true,
     "photograph_frame": true
+  },
+  "tfg": {
+    "tier_locked_block_info": true
   },
   "jadeaddons.lootr": {
     "info": true

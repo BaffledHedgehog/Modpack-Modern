@@ -4,7 +4,7 @@ setlocal EnableExtensions
 cd /d "%~dp0"
 
 set "PACK_DIR=%CD%"
-set "SERVER_DIR=E:\terrafirmagreg_server"
+set "SERVER_DIR=C:\Users\yarik_temp\Desktop\terrafirmagreg_server"
 set "BUILD_DIR=%PACK_DIR%\build"
 set "LOG_FILE=%BUILD_DIR%\pakku-server-build.log"
 set "SRC_MODS=%PACK_DIR%\mods"
