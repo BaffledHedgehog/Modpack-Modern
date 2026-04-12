@@ -36,7 +36,7 @@ renderWaypoints:true
 partialYTeleportation:true
 displayStainedGlass:true
 caveModeDepth:30
-caveModeStart:2147483647
+caveModeStart:1
 autoCaveMode:-1
 legibleCaveMaps:true
 displayCaveModeStart:true
