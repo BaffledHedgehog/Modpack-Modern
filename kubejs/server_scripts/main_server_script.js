@@ -103,6 +103,7 @@ ServerEvents.tags('block', event => {
 	registerTFGBlockTagsNuclear(event)
 	registerVintageImprovementsBlockTags(event)
 	registerWABBlockTags(event)
+	registerCraftingStationBlockTags(event)
 })
 
 /**
@@ -149,6 +150,10 @@ ServerEvents.tags('entity_type', event => {
 	registerWABEntityTypeTags(event)
 })
 
+ServerEvents.tags('block_entity_type', event => {
+	registerCraftingStationBlockEntityTags(event)
+})
+
 /**
  * Событие регистрации датапаков (Здесь можно регистрировать теги, данные, рецепты, общий метод короче).
  * Срабатывает до инициализации рецептов, но после тегов.
@@ -178,6 +183,7 @@ TFCEvents.data(event => {
 	registerTFCDataForTFCLunchbox(event)
 	registerTFCDataForTFG(event)
 	registerTFCDataForWaterFlasks(event)
+	registerTFCDataForRailways(event)
 	registerWABData(event)
 	registerSpeciesData(event)
 })

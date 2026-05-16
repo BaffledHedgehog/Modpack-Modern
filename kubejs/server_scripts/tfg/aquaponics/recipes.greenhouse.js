@@ -533,6 +533,12 @@ const registerTFGGreenhouseRecipes = (event) => {
 	global.AFC_SAPLINGS.forEach(element => {
 		generateTreeGreenHouseRecipe(event, null, `afc:wood/sapling/${element.sapling}`, element.log, `afc:wood/leaves/${element.sapling}`, 1);
 	});
+	global.WAB_WOOD.forEach(element => {
+		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `wan_ancient_beasts:${element.name}_log`, `tfg:wood/leaves/${element.name}`, 1);
+	});
+	global.TFG_NEW_WOOD_TYPES.forEach(element => {
+		generateTreeGreenHouseRecipe(event, null, `tfg:wood/sapling/${element.name}`, `tfg:wood/log/${element.name}`, `tfg:wood/leaves/${element.name}`, 1);
+	});
 
 	// Plants
 	Ingredient.of('#tfc:plants').subtract('#tfc:wild_fruits').stacks.forEach(element => {
@@ -589,6 +595,9 @@ const registerTFGGreenhouseRecipes = (event) => {
 	Ingredient.of('#tfg:moon_plants').stacks.forEach(element => {
 		generateGreenHouseRecipe(event, 'ad_astra:moon', `8x ${element.id}`, [element.withCount(24), element.withCount(8)], 1, 1);
 	});
+
+	// Custom
+	generateGreenHouseRecipe(event, null, '4x tfc:plant/cherry_sapling', ['16x minecraft:cherry_leaves', '8x minecraft:cherry_leaves'], 1, 20);
 
 	//#endregion
 };
