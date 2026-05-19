@@ -55,8 +55,6 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
-    "me_expanded_pattern_buffer_proxy_info": true,
-    "me_expanded_pattern_buffer_info": true,
     "enlarged_me_stocking_bus_info": true,
     "pterb_info": true
   },
@@ -177,6 +175,7 @@
     "animal": true,
     "fruit_tree_sapling": true,
     "squid": true,
+    "dog": true,
     "encased_axle": true,
     "crop": true,
     "blast_furnace": true,
@@ -194,6 +193,7 @@
     "barrel": true,
     "leopard_seal": true,
     "mold_table": true,
+    "wolf": true,
     "predator": true,
     "wild_animal": true,
     "crucible": true,
