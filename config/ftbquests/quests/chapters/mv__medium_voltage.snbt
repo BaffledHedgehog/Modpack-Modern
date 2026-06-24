@@ -19,6 +19,12 @@
 			x: -10.0d
 			y: 17.0d
 		}
+		{
+			id: "1F73EFB819A489A9"
+			linked_quest: "3AF4B19564593C89"
+			x: 3.0d
+			y: 9.0d
+		}
 	]
 	quests: [
 		{
@@ -519,6 +525,7 @@
 				"1646BF9194100E57"
 				"02D2A2FFAB2AB0F1"
 				"3B34F995B31D4C5B"
+				"3AF4B19564593C89"
 			]
 			description: ["{quests.medium_voltage.mv_kanthal_coil.desc}"]
 			hide_dependency_lines: false
@@ -2082,6 +2089,25 @@
 			}]
 			x: 3.0d
 			y: 11.5d
+		}
+		{
+			dependencies: ["682C26579EDDCA76"]
+			description: [
+				"{quests.medium_voltage.chameleon_spray.desc.1}"
+				"{@pagebreak}"
+				"{quests.medium_voltage.chameleon_spray.desc.2}"
+			]
+			id: "382646E2476ED41C"
+			optional: true
+			shape: "heart"
+			subtitle: "{quests.medium_voltage.chameleon_spray.subtitle}"
+			tasks: [{
+				id: "4033CBC14C946625"
+				item: "tfg:chameleon_spray_can"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
 		}
 	]
 	subtitle: ["{quests.medium_voltage.subtitle}"]

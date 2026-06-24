@@ -975,11 +975,21 @@ const registerMinecraftRecipes = (event) => {
 		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/carbon'])
 		.id('tfg:shapeless/gunpowder_carbon')
 
+	event.shapeless('10x minecraft:gunpowder',
+		['#forge:tools/mortars', '2x #forge:dusts/saltpeter', '#forge:dusts/sulfur', '3x #forge:dusts/graphite'])
+		.id('tfg:shapeless/gunpowder_graphite')
+
 	event.shapeless('2x minecraft:gunpowder',
 		['#forge:tools/mortars', 'tfc:powder/saltpeter', 'tfc:powder/saltpeter', 'tfc:powder/sulfur', 'tfc:powder/charcoal', 'tfc:powder/charcoal', 'tfc:powder/charcoal'])
 		.id('tfg:shapeless/gunpowder_tfc_style')
 
 	event.shapeless('8x minecraft:bone_meal', ['#forge:tools/mortars', 'minecraft:skeleton_skull'])
+
+	event.recipes.gtceu.macerator('tfg:skeleton_skull')
+		.itemInputs('minecraft:skeleton_skull')
+		.itemOutputs('8x minecraft:bone_meal')
+		.EUt(2)
+		.duration(50)
 
 	event.replaceInput({ id: 'minecraft:writable_book' }, 'minecraft:ink_sac', '#forge:dyes/black')
 

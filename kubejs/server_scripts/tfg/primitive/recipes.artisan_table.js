@@ -1,4 +1,4 @@
-﻿// priority: 0
+﻿﻿// priority: 0
 "use strict";
 
 function registerTFGArtisanTableRecipes(event) {
@@ -526,7 +526,7 @@ function registerTFGArtisanTableRecipes(event) {
 				"pattern": mold.pattern,
 				"artisanType": "tfg:casting_mold",
 				"type": "tfg:artisan"
-			}).id(`tfg:artisan_table/${linuxUnfucker(mold.name)}_casting_mold`);
+			}).id(`tfg:artisan_table/${global.linuxUnfucker(mold.name)}_casting_mold`);
 		};	
 		if (mold.genExtrude){
 			event.custom({
@@ -534,7 +534,7 @@ function registerTFGArtisanTableRecipes(event) {
 				"pattern": mold.pattern,
 				"artisanType": "tfg:extruder_mold",
 				"type": "tfg:artisan"
-			}).id(`tfg:artisan_table/${linuxUnfucker(mold.name)}_extruder_mold`);
+			}).id(`tfg:artisan_table/${global.linuxUnfucker(mold.name)}_extruder_mold`);
 		};
 	});
 	
@@ -706,12 +706,12 @@ function registerTFGArtisanTableRecipes(event) {
 	event.custom({
 		"result": {"item": "tfg:asphalt_road_stencil_slash_r"},
 		"pattern": [
-			"XXXXXX",
-			"XXXXXX",
-			"XXXXX ",
-			"XXXX  ",
+			"XX  XX",
 			"XXX  X",
-			"XX  XX"
+			"XXXX  ",
+			"XXXXX ",
+			"XXXXXX",
+			"XXXXXX"
 		],
 		"artisanType": "tfg:road_marking_stencil",
 		"type": "tfg:artisan"
@@ -778,10 +778,10 @@ function registerTFGArtisanTableRecipes(event) {
 		"result": {"item": "tfg:asphalt_road_stencil_line_slash_r"},
 		"pattern": [
 			"XX  XX",
-			"XX  XX",
-			"XX  X ",
-			"XX    ",
 			"XX   X",
+			"XX    ",
+			"XX  X ",
+			"XX  XX",
 			"XX  XX"
 		],
 		"artisanType": "tfg:road_marking_stencil",

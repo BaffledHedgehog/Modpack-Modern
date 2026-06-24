@@ -20,7 +20,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Przykładowe drzewo lawokado.",
+      "text": "Dzikie drzewa lawacado można znaleźć pomiędzy Y=198 i Y=60.",
       "multiblocks": [
         {
           "pattern": [
@@ -85,7 +85,7 @@
     },
     {
       "type": "tfc:multimultiblock",
-      "text": "Przykładowe drzewo magmango.",
+      "text": "Dzikie drzewa magmango można znaleźć pomiędzy Y=198 i Y=60.",
       "multiblocks": [
         {
           "pattern": [

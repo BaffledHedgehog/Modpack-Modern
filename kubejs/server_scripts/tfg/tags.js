@@ -29,6 +29,7 @@ const registerTFGItemTags = (event) => {
 	registerTFGAquaponicsItemTags(event)
 	registerTFGMaterialItemTags(event)
 	registerTFGMaterialHiddenPipesTags(event)
+	registerTFGSlimeItemTags(event)
 	
 	// Curios slots for wearables
 	event.add("curios:face", "tfg:snorkel")
@@ -129,12 +130,6 @@ const registerTFGItemTags = (event) => {
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/topaz')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/emerald')
 	event.add('tfg:precision_fabricator_holder_rods', '#forge:rods/olivine')
-	
-	event.add('tfcambiental:cold_stuff', 'minecraft:packed_ice')
-	event.add('tfcambiental:cold_stuff', 'tfc:sea_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:mars_ice')
-	event.add('tfcambiental:cold_stuff', 'tfg:dry_ice')
-
 	// Tag for new lenses
 
 	event.add('forge:lenses/orange', 'gtceu:spessartine_lens')
@@ -369,24 +364,37 @@ const registerTFGFluidTags = (event) => {
 	event.add('tfc:drinkables', 'rnr:concrete')
 	event.add('tfc:any_drinkables', 'gtceu:concrete')
 
-	event.add('tfc:drinkables', 'tfg:vintage_whiskey')
-	event.add('tfg:alcohols', 'tfg:vintage_whiskey')
-	event.add('tfc:drinkables', 'tfg:vintage_beer')
-	event.add('tfg:alcohols', 'tfg:vintage_beer')
-	event.add('tfc:drinkables', 'tfg:vintage_cider')
-	event.add('tfg:alcohols', 'tfg:vintage_cider')
-	event.add('tfc:drinkables', 'tfg:vintage_rum')
-	event.add('tfg:alcohols', 'tfg:vintage_rum')
-	event.add('tfc:drinkables', 'tfg:vintage_sake')
-	event.add('tfg:alcohols', 'tfg:vintage_sake')
-	event.add('tfc:drinkables', 'tfg:vintage_corn_whiskey')
-	event.add('tfg:alcohols', 'tfg:vintage_corn_whiskey')
-	event.add('tfc:drinkables', 'tfg:vintage_rye_whiskey')
-	event.add('tfg:alcohols', 'tfg:vintage_rye_whiskey')
-	event.add('tfc:drinkables', 'tfg:vintage_mead')
-	event.add('tfg:alcohols', 'tfg:vintage_mead')
-	event.add('tfc:drinkables', 'tfg:vintage_vodka')
-	event.add('tfg:alcohols', 'tfg:vintage_vodka')
+	global.ALCOHOLS.forEach(alcohol => {
+
+		if (alcohol.id) {
+			event.add('tfg:alcohols', alcohol.id);
+			event.add('tfg:base_alcohols', alcohol.id);
+			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.id);
+			if (alcohol.genBase) {
+				event.add('tfc:drinkables', alcohol.id);
+			}
+		}
+
+		if (alcohol.agedId) { 
+			event.add('tfg:alcohols', alcohol.agedId);
+			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.agedId);
+			event.add('tfg:proofed_alcohols', alcohol.agedId);
+			if (alcohol.genAged) {
+				event.add('tfc:drinkables', alcohol.agedId);
+				event.add('tfcagedalcohol:aged_alcohols', alcohol.agedId);
+			}
+		}
+
+		if (alcohol.vintageId) {
+			event.add('tfg:alcohols', alcohol.vintageId);
+			event.add(`tfg:alcohols/${alcohol.name}`, alcohol.vintageId);
+			event.add('tfg:proofed_alcohols', alcohol.vintageId);
+			 if (alcohol.genVintage) {
+				event.add('tfc:drinkables', alcohol.vintageId);
+				event.add('tfg:vintage_alcohols', alcohol.vintageId);
+			 }
+		}
+	});
 	
 	event.add('tfc:drinkables', 'gtceu:ice')
 	event.add('tfc:any_drinkables', 'gtceu:ice')
@@ -424,6 +432,10 @@ const registerTFGFluidTags = (event) => {
 	event.add('forge:iron_iii_chloride', 'gtceu:iron_iii_chloride')
 	event.add('forge:tin',               'gtceu:tin')
 	event.add('forge:soldering_alloy',   'gtceu:soldering_alloy')
+
+	// Fluid tag to run the Ore Proc Multiblock
+
+	event.add('tfg:ore_proc_gas', 'gtceu:natural_gas')
 }
 //#endregion
 
@@ -434,6 +446,7 @@ const registerTFGBiomeTags = (event) => {
 	registerTFGMoonBiomeTags(event)
 	registerTFGMarsBiomeTags(event)
 	registerTFGVenusBiomeTags(event)
+	registerTFGSlimeBiomeTags(event)
 }
 
 function registerTFGConfiguredFeatures(event) {
@@ -454,6 +467,7 @@ const registerTFGPlacedFeatures = (event) => {
 const registerTFGEntityTypeTags = (event) => {
 
 	registerTFGOverworldEntityTypeTags(event)
+	registerTFGBeneathEntityTypeTags(event)
 	registerTFGMoonEntityTypeTags(event)
 	registerTFGMarsEntityTypeTags(event)
 	registerTFGVenusEntityTypeTags(event)

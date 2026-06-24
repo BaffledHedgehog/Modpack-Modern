@@ -31,4 +31,8 @@ ignoredRecipeTypes:
 
 # Mod IDs for recipe IDs that should not be copied to Greate machines. Ex. 'create' for all Create recipes
 ignoredModIds:
+  - create
+  - createaddition
+  - vintageimprovements
+  - railways
 

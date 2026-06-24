@@ -3,6 +3,7 @@
 function registerTFGOverworldItemTags(event) {
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/flame_vine_plant')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/cycad_plant')
+	event.add('c:hidden_from_recipe_viewers', 'tfg:plant/pale_hanging_moss_plant')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:volcanic_ash')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:pile/volcanic_ash')
 	event.add('c:hidden_from_recipe_viewers', 'tfg:oil_slick')
@@ -54,11 +55,14 @@ function registerTFGOverworldItemTags(event) {
 	event.add('tfc:makes_white_dye', 'tfg:plant/edelweiss')
 	event.add('tfc:makes_white_dye', 'tfg:plant/bear_grass')
 	event.add('tfc:makes_light_gray_dye', 'tfg:plant/silver_bromeliad')
+	event.add('tfc:makes_light_gray_dye', 'tfg:plant/eyeblossom')
+	event.add('tfc:makes_light_gray_dye', 'tfg:plant/pale_hanging_moss')
 
 	event.add('minecraft:flowers', 'tfg:plant/azalea')
 	event.add('minecraft:flowers', 'tfg:plant/buttercup')
 	event.add('minecraft:flowers', 'tfg:plant/cornflower')
 	event.add('minecraft:flowers', 'tfg:plant/edelweiss')
+	event.add('minecraft:flowers', 'tfg:plant/eyeblossom')
 	event.add('minecraft:flowers', 'tfg:plant/mountain_hullwort')
 	event.add('minecraft:flowers', 'tfg:plant/palash')
 	event.add('minecraft:flowers', 'tfg:plant/penwortel')
@@ -248,7 +252,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfc:highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:hills')
 	event.add('tfg:has_structure/illager_camp', 'tfc:inverted_badlands')
-	event.add('tfg:has_structure/illager_camp', 'tfc:low_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfc:lowlands')
 	event.add('tfg:has_structure/illager_camp', 'tfc:mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfc:oceanic_mountains')
@@ -292,7 +295,6 @@ function registerTFGOverworldBiomeTags(event) {
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/highlands')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/hills')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/inverted_patterned_ground')
-	event.add('tfg:has_structure/illager_camp', 'tfg:earth/low_canyons')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mountains')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/mud_flats')
 	event.add('tfg:has_structure/illager_camp', 'tfg:earth/oceanic_mountains')
@@ -317,12 +319,12 @@ function registerTFGOverworldBiomeTags(event) {
 
 	event.add('tfg:has_structure/illager_roaming', '#tfg:has_structure/illager_camp')
 
-	event.add('tfg:never_has_structure/illages', '#tfc:is_lake')
-	event.add('tfg:never_has_structure/illages', '#tfc:is_ocean')
-	event.add('tfg:never_has_structure/illages', '#tfc:is_river')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_lake')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_ocean')
-	event.add('tfg:never_has_structure/illages', '#tfg:earth/is_river')
+	event.add('tfg:never_has_structure/water', '#tfc:is_lake')
+	event.add('tfg:never_has_structure/water', '#tfc:is_ocean')
+	event.add('tfg:never_has_structure/water', '#tfc:is_river')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_lake')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_ocean')
+	event.add('tfg:never_has_structure/water', '#tfg:earth/is_river')
 
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/coastal_dunes')
 	event.add('tfc_ruins:has_structure/ruin_beach', 'tfg:earth/embayments')
@@ -543,15 +545,16 @@ function registerTFGOverworldEntityTypeTags(event) {
 	event.add('tfc:deals_crushing_damage', 'minecraft:husk')
 	event.add('tfc:deals_crushing_damage', 'minecraft:drowned')
 	event.add('tfc:deals_crushing_damage', 'minecraft:slime')
+	event.add('tfc:deals_slashing_damage', 'minecraft:enderman')
 
 	event.add('tfc:zombies', 'minecraft:drowned')
 	event.add('tfc:zombies', 'minecraft:zombified_piglin')
 
 	event.add('tfg:slimes', 'minecraft:slime')
 	event.add('tfg:slimes', 'minecraft:magma_cube')
+	event.add('tfg:slimes', 'tfg:slime')
 
 	// Takes no damage from the new 1.21 cacti
-	event.add('tfg:ignores_cacti', 'tumbleweed:tumbleweed')
 	event.add('tfg:ignores_cacti', 'waves:waves')
 	event.add('tfg:ignores_cacti', 'tfg:jerboa')
 	event.add('tfg:ignores_cacti', 'tfc:horse')
