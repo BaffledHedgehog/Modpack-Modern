@@ -1,5 +1,4 @@
 {
-  "__COMMENT__": "Ten plik został wygenerowany automatycznie przez LanguageMerger, przeczytaj plik \".README IF TRANSLATING\" znajdujący się w \"minecraft/kubejs\" po więcej informacji.",
   "block.ftbquests.aux_task_screen": "Ekran celów",
   "block.ftbquests.barrier": "Bariera zadania",
   "block.ftbquests.barrier.object": "ID obiektu",
@@ -302,6 +301,7 @@
   "ftbquests.reward.ftbquests.item": "Przedmiot",
   "ftbquests.reward.ftbquests.item.count": "Liczba",
   "ftbquests.reward.ftbquests.item.only_one": "Tylko jeden",
+  "ftbquests.reward.ftbquests.loot": "Nagroda (Łup)",
   "ftbquests.reward.ftbquests.npc_faction": "Frakcja CustomNPC",
   "ftbquests.reward.ftbquests.npc_faction.add": "Dodaj",
   "ftbquests.reward.ftbquests.npc_faction.id": "ID frakcji",
