@@ -105,7 +105,7 @@
 			"entity": "tfg:glacian_ram{NoAI:1b,birth:-100000000L,oldDay:9223372036854775807L,geneticSize:16}",
 			"scale": 0.7,
 			"name": " ",
-			"text": "A glacian ram/ewe."
+			"text": "Lodowcowy baran/owca"
 		},
 		{
 			"type": "patchouli:text",
@@ -217,7 +217,7 @@
 			"type": "patchouli:entity",
 			"entity": "species:stackatick",
 			"scale": 0.4,
-			"name": "Stackatick",
+			"name": "Tragarz",
 			"text": "One of the few animals that can survive the Martian desert, $(thing)Stackaticks$() are passive prey animals. They can also be eaten."
 		}
 	],
