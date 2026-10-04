@@ -34,7 +34,6 @@
 	"tfcambiental.message.is_outside": "Dışarıdasın",
 	"tfcambiental.message.is_outside_alt": "Denetimli serbestlik",
 	"tfcambiental.tooltip.insulation": "Yalıtım: %s",
-	"tfcambiental.tooltip.snowshoes": "Bununla hayatta kara batmazsın",
 	"tfcambiental.tooltip.sun_protection": "Doğrudan günışığına karşı korur.",
 	"tfcambiental.tooltip.warmth": "Sıcaklık: %s"
 }

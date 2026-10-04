@@ -9,7 +9,8 @@ function registerTFCDataForTFG(event) {
 	registerTFGFoodData(event);
 	registerTFGCropRanges(event);
 	registerTFGFLPlanters(event);
-	registerTFGFauna(event);
+	registerOverworldFauna(event);
+	registerMarsFauna(event);
 	registerTFGEquipmentData(event);
 	registerTFGAquaponicsData(event);
 }
@@ -37,6 +38,8 @@ function registerTFGHeatData(event) {
 	event.itemHeat("tfc:powder/limonite", 1, null, null);
 	event.itemHeat("tfc:powder/sphalerite", 1, null, null);
 	event.itemHeat("tfc:powder/tetrahedrite", 1, null, null);
+	event.itemHeat("tfc:powder/pyrite", 1, null, null);
+	event.itemHeat("tfc:powder/lapis_lazuli", 1, null, null);
 
 	event.itemHeat('tfg:unfired_rod_mold', 1.0, null, null);
 	event.itemHeat('tfg:unfired_spindle_head_mold', 1.0, null, null);
@@ -50,7 +53,6 @@ function registerTFGHeatData(event) {
 	event.itemHeat('betterend:charnia_light_blue', 0.25, null, null)
 	event.itemHeat('betterend:charnia_purple', 0.25, null, null)
 	event.itemHeat('betterend:charnia_red', 0.25, null, null)
-
 }
 
 //#endregion
@@ -330,8 +332,8 @@ function registerTFGItemSize(event) {
 	)
 
 	//Universal Compost Bags
-	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "medium")
-	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "medium")
+	event.itemSize("tfg:universal_compost_browns_bag", "tiny", "light");
+	event.itemSize("tfg:universal_compost_greens_bag", "tiny", "light");
 
 
 	//Crafting Station

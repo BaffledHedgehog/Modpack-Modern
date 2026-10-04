@@ -77,4 +77,6 @@
 	#Max active high-frequency gun sounds, such as shooting and animation keyframe sounds, for the same entity and sound id. 0 disables this limit.
 	#Range: 0 ~ 128
 	HighFrequencySoundConcurrencyLimit = 4
+	#Use a non-relative entity-tracking world sound source for first-person animation keyframe sounds. This can improve compatibility with physical sound mods, but may introduce slight stereo drift while moving.
+	FirstPersonAnimationSoundTracking = false
 

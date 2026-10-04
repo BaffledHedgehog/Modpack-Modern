@@ -69,11 +69,22 @@
 		"species:limpet": {
 			"energy_budget": 0.15,
 			"charge": 0.7
+		},
+		"jellies:certus": {
+			"energy_budget": 0.15,
+			"charge": 0.7
 		}
 	},
 	"spawners": {
 		"ambient": [],
-		"axolotls": [],
+		"axolotls": [
+			{
+				"type": "jellies:certus",
+				"maxCount": 1,
+				"minCount": 1,
+				"weight": 100
+			}
+		],
 		"creature": [
 			{
 				"type": "species:birt",

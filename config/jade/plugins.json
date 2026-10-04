@@ -55,8 +55,8 @@
     "chiseled_bookshelf": true
   },
   "gtmutils": {
-    "enlarged_me_stocking_bus_info": true,
-    "pterb_info": true
+    "web_info": true,
+    "enlarged_me_stocking_bus_info": true
   },
   "jadeaddons.create": {
     "filter": true,
@@ -205,6 +205,7 @@
     "water_wheel": true,
     "crankshaft": true,
     "powder_keg": true,
+    "jellie": true,
     "pit_kiln_internal": true,
     "fish": true,
     "candle": true,
@@ -231,14 +232,11 @@
     "photograph_frame": true
   },
   "tfg": {
+    "dynamic_age": true,
     "tier_locked_block_info": true
   },
   "jadeaddons.lootr": {
     "info": true
-  },
-  "tfc_gourmet": {
-    "milkable_animal": true,
-    "brinza_wheel": true
   },
   "corpse": {
     "corpse": true

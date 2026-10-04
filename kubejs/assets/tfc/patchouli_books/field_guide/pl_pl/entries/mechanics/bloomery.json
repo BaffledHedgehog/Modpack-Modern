@@ -1,5 +1,4 @@
 {
-	"__comment__": "This file was automatically created by mcresources",
 	"name": "Dymarka",
 	"category": "tfc:mechanics",
 	"icon": "tfc:bloomery",
@@ -11,7 +10,7 @@
 		{
 			"type": "patchouli:crafting",
 			"recipe": "tfc:crafting/bloomery",
-			"text": "Dymarkę można stworzyć z 8 $(thing)podwójnych brązowych płyt$()."
+			"text": "Dymarkę można stworzyć z 8 $(thing)podwójnych płyt z brązu$()."
 		},
 		{
 			"type": "patchouli:multiblock",

@@ -389,10 +389,6 @@
 			"gtceu:large_boiler/minecraft_flowering_azalea",
 			"gtceu:steam_boiler/minecraft_barrel",
 			"gtceu:large_boiler/minecraft_barrel",
-			"gtceu:shaped/large_bronze_boiler",
-			"gtceu:shaped/large_steel_boiler",
-			"gtceu:shaped/titanium_large_boiler",
-			"gtceu:shaped/tungstensteel_large_boiler",
 			"gtceu:coke_oven/coal_to_coke",
 			"gtceu:forge_hammer/hammer_coal_crushed_ore_to_dust",
 			"gtceu:forge_hammer/hammer_coal_crushed_ore_to_impure_dust",
@@ -463,7 +459,8 @@
 			"gtceu:distillation_tower/distill_liquid_nether_air",
 			"gtceu:centrifuge/ender_air_separation",
 			"gtceu:vacuum_freezer/liquid_ender_air",
-			"gtceu:distillation_tower/distill_liquid_ender_air"
+			"gtceu:distillation_tower/distill_liquid_ender_air",
+			"gtceu:extractor/fish_oil_from_pufferfish"
 		]
 	},
 	{

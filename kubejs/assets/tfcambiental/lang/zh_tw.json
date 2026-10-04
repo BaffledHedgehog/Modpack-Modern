@@ -34,7 +34,6 @@
 	"tfcambiental.message.is_outside": "你在室外",
 	"tfcambiental.message.is_outside_alt": "Your insides are outside",
 	"tfcambiental.tooltip.insulation": "隔熱值: %s",
-	"tfcambiental.tooltip.snowshoes": "不再陷入粉雪",
 	"tfcambiental.tooltip.sun_protection": "保護免受陽光直射",
 	"tfcambiental.tooltip.warmth": "溫暖度: %s"
 }

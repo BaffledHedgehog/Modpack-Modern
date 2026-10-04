@@ -130,7 +130,7 @@
 			id: "591636FADB59A1AE"
 			linked_quest: "4201BFA1946F6491"
 			x: -4.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			id: "35F893275E728B14"
@@ -1001,17 +1001,11 @@
 			y: 0.0d
 		}
 		{
+			disable_toast: true
 			icon: "tfc:rock/loose/gabbro"
 			id: "55BF74AD2E6EF14A"
 			shape: "octagon"
 			size: 1.5d
-			tasks: [{
-				dimension: "minecraft:overworld"
-				icon: "gtceu:overworld_marker"
-				id: "32C9D640115FC6CD"
-				title: "{quests.stone_age.temperature.task}"
-				type: "dimension"
-			}]
 			title: "{quests.combat_tips.stone_main.title}"
 			x: -8.0d
 			y: 0.0d
@@ -1089,7 +1083,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/helmet/bismuth_bronze)item(tfc:metal/helmet/black_bronze)item(tfc:metal/helmet/bronze)item(tfc:metal/helmet/copper)item(tfc:metal/helmet/wrought_iron)item(tfc:metal/helmet/steel)item(tfc:metal/helmet/black_steel)item(tfc:metal/helmet/blue_steel)item(tfc:metal/helmet/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task1}"
+					title: "{quests.combat_tips.armor.task.1}"
 					type: "item"
 				}
 				{
@@ -1101,7 +1095,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/chestplate/bismuth_bronze)item(tfc:metal/chestplate/black_bronze)item(tfc:metal/chestplate/bronze)item(tfc:metal/chestplate/copper)item(tfc:metal/chestplate/wrought_iron)item(tfc:metal/chestplate/steel)item(tfc:metal/chestplate/black_steel)item(tfc:metal/chestplate/blue_steel)item(tfc:metal/chestplate/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task2}"
+					title: "{quests.combat_tips.armor.task.2}"
 					type: "item"
 				}
 				{
@@ -1113,7 +1107,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/greaves/bismuth_bronze)item(tfc:metal/greaves/black_bronze)item(tfc:metal/greaves/bronze)item(tfc:metal/greaves/copper)item(tfc:metal/greaves/wrought_iron)item(tfc:metal/greaves/steel)item(tfc:metal/greaves/black_steel)item(tfc:metal/greaves/blue_steel)item(tfc:metal/greaves/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task3}"
+					title: "{quests.combat_tips.armor.task.3}"
 					type: "item"
 				}
 				{
@@ -1125,7 +1119,7 @@
 							"ftbfiltersystem:filter": "or(item(tfc:metal/boots/bismuth_bronze)item(tfc:metal/boots/black_bronze)item(tfc:metal/boots/bronze)item(tfc:metal/boots/copper)item(tfc:metal/boots/wrought_iron)item(tfc:metal/boots/steel)item(tfc:metal/boots/black_steel)item(tfc:metal/boots/blue_steel)item(tfc:metal/boots/red_steel))"
 						}
 					}
-					title: "{quests.combat_tips.armor.task4}"
+					title: "{quests.combat_tips.armor.task.4}"
 					type: "item"
 				}
 			]
@@ -1158,8 +1152,8 @@
 				type: "item"
 			}]
 			title: "{quests.combat_tips.javelin.title}"
-			x: -7.0d
-			y: -1.5d
+			x: -8.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0EDFCD5F30AAE7D7"]
@@ -1332,13 +1326,13 @@
 						}
 					}
 					optional_task: true
-					title: "{quests.combat_tips.bow.task2}"
+					title: "{quests.combat_tips.bow.task.2}"
 					type: "item"
 				}
 			]
 			title: "{quests.combat_tips.bow.title}"
-			x: -8.0d
-			y: -2.5d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["55BF74AD2E6EF14A"]
@@ -1392,7 +1386,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:swords)"
 						}
 					}
-					title: "{quests.combat_tips.mold_weapons.task1}"
+					title: "{quests.combat_tips.mold_weapons.task.1}"
 					type: "item"
 				}
 				{
@@ -1404,7 +1398,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:scythes)"
 						}
 					}
-					title: "{quests.combat_tips.mold_weapons.task2}"
+					title: "{quests.combat_tips.mold_weapons.task.2}"
 					type: "item"
 				}
 				{
@@ -1416,7 +1410,7 @@
 							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tfc:maces)"
 						}
 					}
-					title: "{quests.combat_tips.mold_weapons.task3}"
+					title: "{quests.combat_tips.mold_weapons.task.3}"
 					type: "item"
 				}
 			]
@@ -1827,7 +1821,7 @@
 			]
 			title: "{quests.combat_tips.club.title}"
 			x: -8.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["07A777BAAB2DBCFC"]
@@ -1867,7 +1861,9 @@
 				"56B7191D184B499C"
 			]
 			dependency_requirement: "one_completed"
+			description: ["{quests.combat_tips.quiver.desc}"]
 			id: "452CE4E2F952F01D"
+			subtitle: "{quests.combat_tips.quiver.subtitle}"
 			tasks: [{
 				id: "04A58E36C5F549B3"
 				item: {
@@ -1882,8 +1878,9 @@
 				}
 				type: "item"
 			}]
+			title: "{quests.combat_tips.quiver.title}"
 			x: -7.0d
-			y: -2.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["0EDFCD5F30AAE7D7"]
@@ -1898,6 +1895,20 @@
 			title: "{quests.combat_tips.trims.title}"
 			x: 0.0d
 			y: 1.5d
+		}
+		{
+			dependencies: ["56B7191D184B499C"]
+			description: ["{quests.combat_tips.javelin_throwing.desc}"]
+			id: "0E47C6B0EB1BA724"
+			subtitle: "{quests.combat_tips.javelin_throwing.subtitle}"
+			tasks: [{
+				id: "15F49241A9FBF3E0"
+				item: "firmaciv:rope_coil"
+				type: "item"
+			}]
+			title: "{quests.combat_tips.javelin_throwing.title}"
+			x: -8.0d
+			y: -4.5d
 		}
 	]
 	subtitle: ["{quests.combat.subtitle}"]

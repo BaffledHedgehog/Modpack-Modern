@@ -5,19 +5,22 @@
 	"pages": [
 		{
 			"type": "patchouli:crafting",
+			"name": "Глина душ",
+			"text": "Акведуки также могут двигать лаву и другие жидкости вокруг, что может быть полезным при строительстве $(l:beneath/hellforge)Hellforge$().",
 			"anchor": "blackstone_aqueduct",
-			"recipe": "tfg:shaped/blackstone_aqueduct",
-			"text": "Пироксенитовый акведук позволяет проводить лаву на любое расстояние."
+			"recipe": "tfg:shaped/blackstone_aqueduct"
 		},
 		{
 			"type": "patchouli:crafting",
-			"recipe": "tfg:shapeless/hellbricks",
-			"text": "Адские кирпичи — это строительный блок, который используется для $(l:beneath/hellforge)Адской кузницы$()."
+			"name": "Сера",
+			"text": "Адские кирпичи — это строительный блок, который используется для $(l:beneath/hellforge)Адской кузницы$().",
+			"recipe": "tfg:shapeless/hellbricks"
 		},
 		{
 			"type": "patchouli:spotlight",
-			"item": "beneath:ancient_altar",
-			"text": "Пироксенитовый пьедестал можно использовать для отображения предметов, которые вы хотите продемонстрировать!"
+			"name": "Сноп соломы",
+			"text": "Пироксенитовый пьедестал можно использовать для отображения предметов, которые вы хотите продемонстрировать!",
+			"item": "beneath:ancient_altar"
 		},
 		{
 			"type": "patchouli:crafting",
