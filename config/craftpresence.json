@@ -134,7 +134,8 @@
       "buttons": {}
     },
     "dynamicIcons": {
-      "localhost": "https://api.mcsrvstat.us/icon/localhost"
+      "localhost": "https://api.mcsrvstat.us/icon/localhost",
+      "cunny.anime.tatar": "https://api.mcsrvstat.us/icon/cunny.anime.tatar"
     },
     "dynamicVariables": {
       "mods": "{general.mods} Mod(s)",

@@ -35,3 +35,7 @@
 	#Range: 0 ~ 256
 	candle_slime_max_y = 70
 
+["Helmet Candle Particles Settings"]
+	#Enable/disable fire particles from the candle on the digger helmet
+	enable_helmet_candle_particles = true
+

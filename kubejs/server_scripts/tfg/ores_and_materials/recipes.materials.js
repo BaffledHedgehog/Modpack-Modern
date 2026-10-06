@@ -33,6 +33,7 @@ function getMaterialAmount(tagPrefix, material) {
  * @param {String} recipeIdSuffix
  */
 function addTFCMelting(event, inputItem, material, mbAmount, recipeIdSuffix) {
+	recipeIdSuffix = global.linuxUnfucker(recipeIdSuffix);
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	const outputMaterial = (tfcProperty.getOutputMaterial() === null) ? material : tfcProperty.getOutputMaterial();
 
@@ -55,6 +56,7 @@ function addTFCMelting(event, inputItem, material, mbAmount, recipeIdSuffix) {
  * @param {String} recipeIdSuffix
  */
 function addAnvilRecipe(event, outputItem, inputItem, steps, bonus, material, recipeIdSuffix) {
+	recipeIdSuffix = global.linuxUnfucker(recipeIdSuffix);
 	const tfcProperty = material.getProperty(TFGPropertyKey.TFC_PROPERTY);
 	event.recipes.tfc.anvil(outputItem, inputItem, steps)
 		.tier(tfcProperty.getTier())
@@ -82,6 +84,7 @@ function addMaterialRecycling(event, inputItem, material, tagPrefixName, tagPref
  * @param {number} ingotAmount
  */
 function addMaterialRecyclingNoTagPrefix(event, inputItem, material, recipeSuffix, ingotAmount) {
+	recipeSuffix = global.linuxUnfucker(recipeSuffix);
 	const materialName = material.getName();
 	const mbAmount = ingotAmount * 144;
 

@@ -1,6 +1,6 @@
 {
   "shaderHash": "295fdb3ad7bb1ce12df12566e36cca34331f6834bd107878ff9cbac5bba42fd7",
-  "EPVersion": "1.10.0",
+  "EPVersion": "1.10.5",
   "styleReimagined": false,
-  "styleUnbound": false
+  "styleUnbound": true
 }

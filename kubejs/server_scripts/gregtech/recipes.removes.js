@@ -115,6 +115,7 @@ function removeGTCEURecipes(event) {
 }
 
 function removeMaceratorRecipe(event, id) {
+	id = global.linuxUnfucker(id);
 	event.remove({ id: `gtceu:macerator/${id}` })
 	event.remove({ id: `greate:milling/integration/gtceu/macerator/${id}` })
 	event.remove({ id: `greate:crushing/integration/gtceu/macerator/${id}` })
