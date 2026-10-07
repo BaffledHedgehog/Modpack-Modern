@@ -108,7 +108,7 @@ defaultconfigs/ftbranks/players.snbt
 /scripts
 /gtceu
 /mods
-/\.voxy/
+/.voxy/
 
 # Client data
 bansoukou
