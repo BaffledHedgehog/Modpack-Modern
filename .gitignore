@@ -108,6 +108,7 @@ defaultconfigs/ftbranks/players.snbt
 /scripts
 /gtceu
 /mods
+/.voxy
 
 # Client data
 bansoukou
@@ -134,6 +135,8 @@ hei_bookmarks.ini
 icon.png
 EffekseerNativeForJava.dll
 libEffekseerNativeForJava.so
+TLauncherAdditional.json
+win_event1774751723659.txt
 
 # Server data
 # .pakku/server-overrides/libraries

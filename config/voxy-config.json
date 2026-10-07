@@ -11,5 +11,5 @@
   "adapt_cloud_distance": true,
   "cloud_distance": 0,
   "dont_use_sodium_builder_threads": false,
-  "use_environmental_fog": true
+  "use_environmental_fog": false
 }
