@@ -153,3 +153,5 @@ win_event1774751723659.txt
 .voxy/saves/localhost_8125/d4a115e34500d7e73dfc7b8fb0284485/storage/CURRENT
 .voxy/saves/localhost_8125/d4a115e34500d7e73dfc7b8fb0284485/storage/LOCK
 .voxy/saves/localhost_8125/d4a115e34500d7e73dfc7b8fb0284485/storage/LOG
+config/packetfixer.properties
+config/voicechat/voicechat-client.properties
